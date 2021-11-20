@@ -59,7 +59,7 @@ To download the subtitles in multiple languages from primevideo.com use
 
 amazon.py --subs --slang en,fr,it  -r pv -p pv -a amzn1.dv.gti.90b82cf5-c187-8341-ab5e-f1eacddaf9da
 
-To download the subtitles for a season from amazon.com use
+To download the subtitles for a season from amazon.com use (downloading a season does not work with primevideo.com)
 
 amazon.py --subs --slang en -r us -p us -a B08BYYSF6M --season-amazon
 
