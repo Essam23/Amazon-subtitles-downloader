@@ -17,38 +17,11 @@ For Firefox use this addon
 
 https://addons.mozilla.org/en-US/firefox/addon/cookies-txt-one-click/
 
-4. To download the video you will need to get the asin for the video, use this userscript for getting it
+To download the subtitles you will need to get the asin for the video, use this userscript for getting it
 
 https://greasyfork.org/en/scripts/381997-amazon-video-asin-display
 
-5. In the script's folder three batches
-
-a. download.video.bat
-
-For downloading the video from primevideo.com use
-
-amazon.py -r pv -p pv -a amzn1.dv.gti.90b82cf5-c187-8341-ab5e-f1eacddaf9da --alang en --noAD --slang en -q 1080
-
-For downloading the video in hevc profile use
-
-amazon.py -r pv -p pv -a amzn1.dv.gti.90b82cf5-c187-8341-ab5e-f1eacddaf9da --hevc --alang en --noAD --slang en -q 1080
-
-when using
-
-amazon.py -r pv -p pv -a amzn1.dv.gti.90b82cf5-c187-8341-ab5e-f1eacddaf9da
-
-the script will download the video with the highest bitrate and the audio with the highest bitrate 
-with all the available audio languages and subtitles
-
-The downloads will be saved in the folder output.
-
-For adding more options use the instructions in amazon.py, open the file with Notepad++.
-
-
-
-b. download.subtitles.bat
-
-For downloading only the subtitles
+For downloading the subtitles
 
 change en to the language you need to download the subtitles in
 
@@ -61,18 +34,4 @@ amazon.py --subs --slang en,fr,it  -r pv -p pv -a amzn1.dv.gti.90b82cf5-c187-834
 To download the subtitles for a season from amazon.com use
 
 amazon.py --subs --slang en -r us -p us -a B08BYYSF6M --season-amazon
-
-
-
-c. download.audio.bat
-
-for downloading only the audio
-
-change en to the language you need to download the audio in
-
-amazon.py -r pv -p pv -a amzn1.dv.gti.90b82cf5-c187-8341-ab5e-f1eacddaf9da --nosubs --novideo --keep --alang en --noAD
-
-to download only the original audio use
-
-amazon.py -r pv -p pv -a amzn1.dv.gti.90b82cf5-c187-8341-ab5e-f1eacddaf9da --nosubs --novideo --keep --original
 
