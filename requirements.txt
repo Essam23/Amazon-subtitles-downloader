@@ -1,0 +1,11 @@
+beautifulsoup4
+humanfriendly
+protobuf
+pycryptodomex
+pymp4
+requests
+titlecase
+tqdm
+Unidecode
+untangle
+xmltodict
