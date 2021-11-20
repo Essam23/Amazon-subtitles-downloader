@@ -21,13 +21,13 @@ To download the subtitles you will need to get the asin for the video, use this 
 
 https://greasyfork.org/en/scripts/381997-amazon-video-asin-display
 
-For downloading the subtitles
-
-change en to the language you need to download the subtitles in
+For downloading the subtitles from primevideo.com use
 
 amazon.py --subs --slang en -r pv -p pv -a amzn1.dv.gti.90b82cf5-c187-8341-ab5e-f1eacddaf9da
 
-To download the subtitles in multiple languages use
+change en to the language you need to download the subtitles in.
+
+To download the subtitles in multiple languages from primevideo.com use
 
 amazon.py --subs --slang en,fr,it  -r pv -p pv -a amzn1.dv.gti.90b82cf5-c187-8341-ab5e-f1eacddaf9da
 
