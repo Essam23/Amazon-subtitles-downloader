@@ -35,3 +35,7 @@ To download the subtitles for a season from amazon.com use
 
 amazon.py --subs --slang en -r us -p us -a B08BYYSF6M --season-amazon
 
+The subtitles will be saved in the folder output.
+
+For adding more options use the instructions in amazon.py, open the file with Notepad++.
+
