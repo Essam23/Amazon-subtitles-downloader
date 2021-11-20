@@ -1,3 +1,7 @@
+This script will not decrypt the audio or the video, use it only for downloading the subtitles. 
+
+
+
 1. Install python 3.9.9, be sure to add python to PATH while installing it
 
 https://www.python.org/ftp/python/3.9.9/python-3.9.9-amd64.exe
@@ -38,4 +42,3 @@ amazon.py --subs --slang en -r us -p us -a B08BYYSF6M --season-amazon
 The subtitles will be saved in the folder output.
 
 For adding more options use the instructions in amazon.py, open the file with Notepad++.
-
