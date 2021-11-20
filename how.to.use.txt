@@ -1,7 +1,3 @@
-This script will not decrypt the audio or the video, use it only for downloading the subtitles. 
-
-
-
 1. Install python 3.9.9, be sure to add python to PATH while installing it
 
 https://www.python.org/ftp/python/3.9.9/python-3.9.9-amd64.exe
@@ -21,15 +17,43 @@ For Firefox use this addon
 
 https://addons.mozilla.org/en-US/firefox/addon/cookies-txt-one-click/
 
-To download the subtitles you will need to get the asin for the video, use this userscript for getting it
+4. To download the video you will need to get the asin for the video, use this userscript for getting it
 
 https://greasyfork.org/en/scripts/381997-amazon-video-asin-display
 
-For downloading the subtitles from primevideo.com use
+5. In the script's folder three batches
+
+a. download.video.bat
+
+For downloading the video from primevideo.com use
+
+amazon.py -r pv -p pv -a amzn1.dv.gti.90b82cf5-c187-8341-ab5e-f1eacddaf9da --alang en --noAD --slang en -q 1080
+
+For downloading the video in hevc profile from primevideo.com use
+
+amazon.py -r pv -p pv -a amzn1.dv.gti.90b82cf5-c187-8341-ab5e-f1eacddaf9da --hevc --alang en --noAD --slang en -q 1080
+
+when using
+
+amazon.py -r pv -p pv -a amzn1.dv.gti.90b82cf5-c187-8341-ab5e-f1eacddaf9da
+
+the script will download the video from primevideo.com with the highest bitrate and the audio with the highest bitrate 
+with all the available audio languages and subtitles
+
+The downloads will be saved in the folder output.
+
+For adding more options use the instructions in amazon.py, open the file with Notepad++.
+
+
+
+b. download.subtitles.bat
+
+For downloading only the subtitles from primevideo.com use
 
 amazon.py --subs --slang en -r pv -p pv -a amzn1.dv.gti.90b82cf5-c187-8341-ab5e-f1eacddaf9da
 
 change en to the language you need to download the subtitles in.
+
 
 To download the subtitles in multiple languages from primevideo.com use
 
@@ -39,6 +63,17 @@ To download the subtitles for a season from amazon.com use
 
 amazon.py --subs --slang en -r us -p us -a B08BYYSF6M --season-amazon
 
-The subtitles will be saved in the folder output.
 
-For adding more options use the instructions in amazon.py, open the file with Notepad++.
+
+c. download.audio.bat
+
+For downloading only the audio from primevideo.com
+
+amazon.py -r pv -p pv -a amzn1.dv.gti.90b82cf5-c187-8341-ab5e-f1eacddaf9da --nosubs --novideo --keep --alang en --noAD
+
+change en to the language you need to download the audio in.
+
+To download only the original audio from primevideo.com use
+
+amazon.py -r pv -p pv -a amzn1.dv.gti.90b82cf5-c187-8341-ab5e-f1eacddaf9da --nosubs --novideo --keep --original
+
