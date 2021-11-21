@@ -662,7 +662,7 @@ class AmazonDownloader(object):
 			
 			ara = self.setouput('{} Arabic subtitle.srt'.format(name))
 			if os.path.isfile(ara):       
-				subprocess.call([self.SubtitleEdit, "/convert", ara, "srt", "/reversertlstartend", "/overwrite"], stdout=(open(os.devnull, 'wb')))							
+				subprocess.call([self.SubtitleEdit, "/convert", ara, "srt", "/MultipleReplace", "/overwrite"], stdout=(open(os.devnull, 'wb')))							
 			
 		else:            
 			videourls = self.amazonparser.mpds(data=data['mpd_video'], type="video")
@@ -737,7 +737,7 @@ class AmazonDownloader(object):
 			
 			ara = self.setouput('{} Arabic subtitle.srt'.format(name))
 			if os.path.isfile(ara):       
-				subprocess.call([self.SubtitleEdit, "/convert", ara, "srt", "/reversertlstartend", "/overwrite"], stdout=(open(os.devnull, 'wb')))						
+				subprocess.call([self.SubtitleEdit, "/convert", ara, "srt", "/MultipleReplace", "/overwrite"], stdout=(open(os.devnull, 'wb')))						
 
 			if self.forced or self.original:
 				self.logger.info("\nForced Subtitles: ")
