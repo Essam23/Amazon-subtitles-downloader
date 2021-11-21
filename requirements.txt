@@ -1,6 +1,7 @@
 beautifulsoup4
 humanfriendly
 protobuf
+pycryptodome
 pycryptodomex
 pymp4
 requests
