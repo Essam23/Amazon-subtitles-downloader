@@ -22,7 +22,7 @@ DEFAULTCONFIG = {
     "mediainfo": r'pyamazon/Helpers/binaries/mediaInfo.exe',
     "mkvmerge": r'pyamazon/Helpers/binaries/mkvmerge.exe',
     "mp4decrypt": r'pyamazon/Helpers/binaries/mp4decrypt.exe',
-    "subtitledit": r'pyamazon/Helpers/binaries/SE363/SubtitleEdit',
+    "subtitledit": r'pyamazon/Helpers/binaries/SE363/SubtitleEdit.exe',
     "group": "", 
     'redownload_ID': 'Yes',
     'output': None,
