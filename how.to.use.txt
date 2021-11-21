@@ -27,15 +27,15 @@ a. download.video.bat
 
 For downloading the video from primevideo.com use
 
-amazon.py -r pv -p pv -a amzn1.dv.gti.90b82cf5-c187-8341-ab5e-f1eacddaf9da --alang en --noAD --slang en -q 1080
+amazon.py -r pv -p pv -a amzn1.dv.gti.feb8c501-83d1-35fb-7572-319fd0b31cf3 --alang en --noAD --slang en -q 1080
 
 For downloading the video in hevc profile from primevideo.com use
 
-amazon.py -r pv -p pv -a amzn1.dv.gti.90b82cf5-c187-8341-ab5e-f1eacddaf9da --hevc --alang en --noAD --slang en -q 1080
+amazon.py -r pv -p pv -a amzn1.dv.gti.feb8c501-83d1-35fb-7572-319fd0b31cf3 --hevc --alang en --noAD --slang en -q 1080
 
 when using
 
-amazon.py -r pv -p pv -a amzn1.dv.gti.90b82cf5-c187-8341-ab5e-f1eacddaf9da
+amazon.py -r pv -p pv -a amzn1.dv.gti.feb8c501-83d1-35fb-7572-319fd0b31cf3
 
 the script will download the video from primevideo.com with the highest bitrate and the audio with the highest bitrate 
 with all the available audio languages and subtitles
@@ -50,14 +50,14 @@ b. download.subtitles.bat
 
 For downloading only the subtitles from primevideo.com use
 
-amazon.py --subs --slang en -r pv -p pv -a amzn1.dv.gti.90b82cf5-c187-8341-ab5e-f1eacddaf9da
+amazon.py --subs --slang en -r pv -p pv -a amzn1.dv.gti.feb8c501-83d1-35fb-7572-319fd0b31cf3
 
 change en to the language you need to download the subtitles in.
 
 
 To download the subtitles in multiple languages from primevideo.com use
 
-amazon.py --subs --slang en,fr,it  -r pv -p pv -a amzn1.dv.gti.90b82cf5-c187-8341-ab5e-f1eacddaf9da
+amazon.py --subs --slang en,fr,it  -r pv -p pv -a amzn1.dv.gti.feb8c501-83d1-35fb-7572-319fd0b31cf3
 
 To download the subtitles for a season from amazon.com use (downloading a season does not work with primevideo.com)
 
@@ -69,11 +69,11 @@ c. download.audio.bat
 
 For downloading only the audio from primevideo.com
 
-amazon.py -r pv -p pv -a amzn1.dv.gti.90b82cf5-c187-8341-ab5e-f1eacddaf9da --nosubs --novideo --keep --alang en --noAD
+amazon.py -r pv -p pv -a amzn1.dv.gti.feb8c501-83d1-35fb-7572-319fd0b31cf3 --nosubs --novideo --keep --alang en --noAD
 
 change en to the language you need to download the audio in.
 
 To download only the original audio from primevideo.com use
 
-amazon.py -r pv -p pv -a amzn1.dv.gti.90b82cf5-c187-8341-ab5e-f1eacddaf9da --nosubs --novideo --keep --original
+amazon.py -r pv -p pv -a amzn1.dv.gti.feb8c501-83d1-35fb-7572-319fd0b31cf3 --nosubs --novideo --keep --original
 
