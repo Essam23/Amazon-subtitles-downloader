@@ -86,3 +86,6 @@ To download only the original audio from primevideo.com use
 
 amazon.py -r pv -p pv -a amzn1.dv.gti.feb8c501-83d1-35fb-7572-319fd0b31cf3 --nosubs --novideo --keep --original
 
+To download the audio in a specific bitrate use (choose from 128, 192, 224, 256, 384, 448, 640)
+
+amazon.py -r pv -p pv -a amzn1.dv.gti.feb8c501-83d1-35fb-7572-319fd0b31cf3 --nosubs --novideo --noAD --keep -qa 384
