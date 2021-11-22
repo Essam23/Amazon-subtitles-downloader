@@ -39,7 +39,15 @@ when using
 amazon.py -r pv -p pv -a amzn1.dv.gti.feb8c501-83d1-35fb-7572-319fd0b31cf3
 
 the script will download the video from primevideo.com with the highest bitrate and the audio with the highest bitrate 
-with all the available audio languages and subtitles
+with all the available audio languages and subtitles.
+
+For setting the default subtitle language use
+
+amazon.py -r pv -p pv -a amzn1.dv.gti.feb8c501-83d1-35fb-7572-319fd0b31cf3 --default-sub-mux eng
+
+For setting the default audio language use
+
+amazon.py -r pv -p pv -a amzn1.dv.gti.feb8c501-83d1-35fb-7572-319fd0b31cf3 --default-audio-mux eng
 
 The downloads will be saved in the folder output.
 
