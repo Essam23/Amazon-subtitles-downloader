@@ -1,4 +1,5 @@
-1. Install python 3.9.9, be sure to add python to PATH while installing it
+1. Install python 3.9.9, be sure to add python to PATH while installing it 
+(this script will work only with python 3.9)
 
 https://www.python.org/ftp/python/3.9.9/python-3.9.9-amd64.exe
 
