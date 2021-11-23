@@ -1,5 +1,5 @@
 1. Install python 3.9.9, be sure to add python to PATH while installing it 
-(this script will work only with python 3.9)
+(this script will work only with python 3.9.x)
 
 https://www.python.org/ftp/python/3.9.9/python-3.9.9-amd64.exe
 
@@ -62,7 +62,6 @@ For downloading only the subtitles from amazon.com use
 amazon.py --subs --slang en -r us -p us -a B08BYZKJSH
 
 change en to the language you need to download the subtitles in.
-
 
 To download the subtitles in multiple languages from amazon.com use
 
