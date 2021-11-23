@@ -11,8 +11,8 @@ https://datatofish.com/add-python-to-windows-path/
 
 https://chrome.google.com/webstore/detail/get-cookiestxt/bgaddhkoddajcdgocldbbfleckgcbcid
 
-and go to primevideo.com, amazon.com, amazon.co.uk and amazon.de and download the cookies, 
-rename the file to pv.txt, us.txt, uk.txt and de.txt and put it in the folder cookies
+and go to amazon.com, amazon.co.uk, amazon.de and primevideo.com and download the cookies, 
+rename the file to us.txt, uk.txt, de.txt and pv.txt and put it in the folder cookies
 
 For Firefox use this addon
 
@@ -26,28 +26,28 @@ https://greasyfork.org/en/scripts/381997-amazon-video-asin-display
 
 a. download.video.bat
 
-For downloading the video from primevideo.com use
+For downloading the video from amazon.com use
 
-amazon.py -r pv -p pv -a amzn1.dv.gti.feb8c501-83d1-35fb-7572-319fd0b31cf3 --alang en --noAD --slang en -q 1080
+amazon.py -r us -p us -a B08BYZKJSH --alang en --noAD --slang en -q 1080
 
-For downloading the video in hevc profile from primevideo.com use
+For downloading the video in hevc profile from amazon.com use
 
-amazon.py -r pv -p pv -a amzn1.dv.gti.feb8c501-83d1-35fb-7572-319fd0b31cf3 --hevc --alang en --noAD --slang en -q 1080
+amazon.py -r us -p us -a B08BYZKJSH --hevc --alang en --noAD --slang en -q 1080
 
 when using
 
-amazon.py -r pv -p pv -a amzn1.dv.gti.feb8c501-83d1-35fb-7572-319fd0b31cf3
+amazon.py -r us -p us -a B08BYZKJSH
 
-the script will download the video from primevideo.com with the highest bitrate and the audio with the highest bitrate 
+the script will download the video from amazon.com with the highest bitrate and the audio with the highest bitrate 
 with all the available audio languages and subtitles.
 
 For setting the default subtitle language use
 
-amazon.py -r pv -p pv -a amzn1.dv.gti.feb8c501-83d1-35fb-7572-319fd0b31cf3 --default-sub-mux eng
+amazon.py -r us -p us -a B08BYZKJSH --default-sub-mux eng
 
 For setting the default audio language use
 
-amazon.py -r pv -p pv -a amzn1.dv.gti.feb8c501-83d1-35fb-7572-319fd0b31cf3 --default-audio-mux eng
+amazon.py -r us -p us -a B08BYZKJSH --default-audio-mux eng
 
 The downloads will be saved in the folder output.
 
@@ -57,18 +57,18 @@ For adding more options use the instructions in amazon.py, open the file with No
 
 b. download.subtitles.bat
 
-For downloading only the subtitles from primevideo.com use
+For downloading only the subtitles from amazon.com use
 
-amazon.py --subs --slang en -r pv -p pv -a amzn1.dv.gti.feb8c501-83d1-35fb-7572-319fd0b31cf3
+amazon.py --subs --slang en -r us -p us -a B08BYZKJSH
 
 change en to the language you need to download the subtitles in.
 
 
-To download the subtitles in multiple languages from primevideo.com use
+To download the subtitles in multiple languages from amazon.com use
 
-amazon.py --subs --slang en,fr,it  -r pv -p pv -a amzn1.dv.gti.feb8c501-83d1-35fb-7572-319fd0b31cf3
+amazon.py --subs --slang en,fr,it  -r us -p us -a B08BYZKJSH
 
-To download the subtitles for a season from amazon.com use (downloading a season does not work with primevideo.com)
+To download the subtitles for a season from amazon.com use
 
 amazon.py --subs --slang en -r us -p us -a B08BYYSF6M --season-amazon
 
@@ -76,16 +76,16 @@ amazon.py --subs --slang en -r us -p us -a B08BYYSF6M --season-amazon
 
 c. download.audio.bat
 
-For downloading only the audio from primevideo.com
+For downloading only the audio from amazon.com
 
-amazon.py -r pv -p pv -a amzn1.dv.gti.feb8c501-83d1-35fb-7572-319fd0b31cf3 --nosubs --novideo --keep --alang en --noAD
+amazon.py -r us -p us -a B08BYZKJSH --nosubs --novideo --keep --alang en --noAD
 
 change en to the language you need to download the audio in.
 
-To download only the original audio from primevideo.com use
+To download only the original audio from amazon.com use
 
-amazon.py -r pv -p pv -a amzn1.dv.gti.feb8c501-83d1-35fb-7572-319fd0b31cf3 --nosubs --novideo --keep --original
+amazon.py -r us -p us -a B08BYZKJSH --nosubs --novideo --keep --original
 
 To download the audio in a specific bitrate use (choose from 128, 192, 224, 256, 384, 448, 640)
 
-amazon.py -r pv -p pv -a amzn1.dv.gti.feb8c501-83d1-35fb-7572-319fd0b31cf3 --nosubs --novideo --noAD --keep -qa 384
+amazon.py -r us -p us -a B08BYZKJSH --nosubs --novideo --noAD --keep -qa 384
