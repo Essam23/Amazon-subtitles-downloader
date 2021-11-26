@@ -1,1 +1,1 @@
-# Amazon-video-downloader
+# Amazon-subtitles-downloader
